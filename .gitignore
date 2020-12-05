@@ -1,0 +1,10 @@
+# Mac
+**/.DS_Store
+
+# IDE
+.idea
+out
+.vscode
+
+# Project
+java_custom_annotation.iml
