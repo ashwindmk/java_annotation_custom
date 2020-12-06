@@ -6,5 +6,4 @@ package com.ashwin.type;
         tags = {"test", "demo"}
 )
 public class MyTypeDemo {
-
 }

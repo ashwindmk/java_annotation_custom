@@ -17,13 +17,7 @@ public class MethodAnnotationProcessor {
                     try {
                         String res = (String) method.invoke(obj.getDeclaredConstructor().newInstance());
                         System.out.println("Method " + method.getName() + " is enabled, result: " + res);
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    } catch (InvocationTargetException e) {
-                        e.printStackTrace();
-                    } catch (InstantiationException e) {
-                        e.printStackTrace();
-                    } catch (NoSuchMethodException e) {
+                    } catch (IllegalAccessException | InvocationTargetException | InstantiationException | NoSuchMethodException e) {
                         e.printStackTrace();
                     }
                 } else {
